@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <link href="index.css" rel="stylesheet">
+        <link rel="stylesheet"  href="assets/css/Styles.css" />
+        <link rel="shortcut icon" href="assets/images/calculator.png" type="image/x-icon" />
+        
+    </head>
+
+<body>
+    <div id="calculator">
+        <div>
+            <img src="assets/images/brand-logo.png" class="brand-logo">
+        </div>
+                <div class="solar-panel">
+                    <div class="solar-box1"></div>
+                    <div class="vertical-line"></div>
+                    <div class="solar-box"></div>
+                    <div class="vertical-line"></div>
+                    <div class="solar-box3"></div>
+                    <div class="solid-box4"></div>
+                </div>
+        
+            <div id="screen">
+                <input id="previous" readonly>
+                <input id="output" readonly>
+            </div>
+                <div id="button-wrapper">
+                    <button class="button" onclick="Clear()">C</button>
+                    <button class="button" onclick="Backspace()">DEL</button>
+                    <button class="button" onclick="Percent()">%</button>
+                    <button class="button" onclick="Operation('/')">÷</button>
+                    <button class="button" onclick="Append('7')">7</button>
+                    <button class="button" onclick="Append('8')">8</button>
+                    <button class="button" onclick="Append('9')">9</button>
+                    <button class="button" onclick="Operation('*')">x</button>
+                    <button class="button" onclick="Append('4')">4</button>
+                    <button class="button" onclick="Append('5')">5</button>
+                    <button class="button" onclick="Append('6')">6</button>
+                    <button class="button" onclick="Operation('-')">-</button>
+                    <button class="button" onclick="Append('1')">1</button>
+                    <button class="button" onclick="Append('2')">2</button>
+                    <button class="button" onclick="Append('3')">3</button>
+                    <button class="button" onclick="Operation('+')">+</button>
+                    <button class="button" onclick="AppendDec('.')">.</button>
+                    <button class="button" onclick="Append('0')">0</button>
+                    <button class="button" onclick="Equals()" style="grid-column: span 2;">=</button>
+                </div>
+        
+    </div>
+</body>
+
+<script src="index.js"></script>
+<script src="assets/scripts/Script.js"></script>
+</html>

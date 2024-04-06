@@ -1,0 +1,161 @@
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:120vh;
+    width:100vw;
+    background-color: #fffff9;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+img{
+    padding-bottom: 3rem;
+}
+
+
+
+
+#calculator{
+    display:flex;
+    height: 85vh;
+    flex-direction: column;
+    background-color: #BC8CF2;
+    border: solid 1px white;
+    padding:1rem;
+    border-radius:1rem;
+    gap:.5rem;
+    box-shadow: 0rem 0rem 0rem .1rem #0a0a0a;
+    margin-top: -100px;
+
+}
+.brand-logo{
+    height: 60px;
+    width: 90px;
+    margin-top: 0px;
+    margin-bottom: -100px;
+}
+.solar-panel{
+    display: flex;
+    justify-content: end;
+  }
+.solar-box1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(41, 37, 37);
+    border-radius: 7px 0 0 7px;
+  }
+  .solar-box {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(41, 37, 37);
+  }
+
+  .solar-box3 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(41, 37, 37);
+    border-radius: 0 7px 7px 0;
+  }
+.vertical-line {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc; /* Grey-white color */
+   
+  }
+#screen{
+    height: 30vh;
+    width: 50vh;
+    border: 2px solid black;
+    background: rgb(145, 127, 179);
+    padding: 2px;
+    border-radius:  10px;
+}
+
+#previous{
+    border:none;
+    outline:none;
+    text-align: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    font-size:1rem;
+    background:none;
+    color: #7739bd;
+    width:100%;
+    
+    
+}
+
+#output{
+    border:none;
+    outline:none;
+    text-align: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    background:none;
+    color: #0a0a0a;
+    font-size:2rem;
+    width:100%;
+    padding:0;
+    margin:0;
+    
+    
+    
+}
+
+#button-wrapper{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:.5rem;
+    margin-top: 20px;
+}
+
+.button{
+    border:none;
+    padding: 0;
+    min-width:4.5rem;
+    min-height:4rem;
+    border-radius: 1rem;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    background: rgb(173, 123, 233);
+    color:#fffff9;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 0rem .1rem #0a0a0a;
+    transition: ease-in-out 100ms;
+
+}
+
+.button:nth-child(4n){
+    background: #0a0a0a;
+    color:#BC8CF2;
+}
+
+.button:nth-child(4n):focus:active{
+    background: rgb(170, 20, 240)
+}
+
+.button:nth-child(19){
+    background:#0a0a0a;
+    color: #BC8CF2;
+}
+
+.button:nth-child(19):active:focus{
+    background: rgb(170, 20, 240)
+}
+
+.button:hover{
+    cursor: pointer;
+    margin:-.1em;
+}
+
+#happy{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    padding:0;
+}
